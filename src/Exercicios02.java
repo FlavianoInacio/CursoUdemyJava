@@ -4,12 +4,12 @@ import java.util.Scanner;
 import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
 
 public class Exercicios02 {
+	public Scanner sc = new Scanner(System.in);
 	
-	public static void exercicio1() {
+	public void exercicio1() {
 		int value1;
 		int value2;
 		int sum;
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite um valor");
 		value1 = sc.nextInt();
 		sc.nextLine();
@@ -20,9 +20,7 @@ public class Exercicios02 {
 		sc.close();
 	}
 	
-	public static void exercicio2() {
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
+	public  void exercicio2() {
 		double raio;
 		double pi = 3.14159;
 		double area;
@@ -34,9 +32,8 @@ public class Exercicios02 {
 		
 	}
 	
-	public static void exercicio3() {
+	public  void exercicio3() {
 		int a,b,c,d,diferenca;
-		Scanner sc = new Scanner(System.in);
 		a = sc.nextInt();
 		sc.nextLine();
 		b = sc.nextInt();
@@ -49,13 +46,11 @@ public class Exercicios02 {
 		sc.close();
 	}
 
-	public static void exercicio4() {
-		Locale.setDefault(Locale.US);
+	public void exercicio4() {
 		int number;
 		double salary;
 		int workWours;
 		double hourValueWork;
-		Scanner sc = new Scanner(System.in);
 		number = sc.nextInt();
 		workWours = sc.nextInt();
 		hourValueWork = sc.nextDouble();
@@ -63,5 +58,23 @@ public class Exercicios02 {
 		System.out.println("NUMBER = "+number);
 		System.out.println("SALARY = "+salary);
 		sc.close();
+	}
+	
+	public  void exercicio5() {
+		int codPiece1,codPiece2,qtdPiece1,qtdPiece2;
+		double valuePiece1,valuePiece2,total;
+		codPiece1 = sc.nextInt();
+		qtdPiece1 = sc.nextInt();
+		valuePiece1 = sc.nextDouble();
+		codPiece2 = sc.nextInt();
+		qtdPiece2 = sc.nextInt();
+		valuePiece2 = sc.nextDouble();
+		total = (valuePiece1*qtdPiece1) + (valuePiece2*qtdPiece2);
+		System.out.printf("VALOR A PAGAR : %.2f" , total);
+		sc.close();
+	}
+	
+	public void exercicio6() {
+		
 	}
 }
