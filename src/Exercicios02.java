@@ -1,6 +1,8 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
+
 public class Exercicios02 {
 	
 	public static void exercicio1() {
@@ -27,9 +29,39 @@ public class Exercicios02 {
 		System.out.println("Digite o valor do raio");
 		raio = sc.nextDouble();
 		area = pi*(Math.pow(raio, 2));
-		System.out.printf("√Årea = %.4f", area);
+		System.out.printf("¡rea = %.4f", area);
 		sc.close();
 		
 	}
+	
+	public static void exercicio3() {
+		int a,b,c,d,diferenca;
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		sc.nextLine();
+		b = sc.nextInt();
+		sc.nextLine();
+		c = sc.nextInt();
+		sc.nextLine();
+		d = sc.nextInt();
+		diferenca = (a*b-c*d);
+		System.out.println("DIFEREN«A = " + diferenca);
+		sc.close();
+	}
 
+	public static void exercicio4() {
+		Locale.setDefault(Locale.US);
+		int number;
+		double salary;
+		int workWours;
+		double hourValueWork;
+		Scanner sc = new Scanner(System.in);
+		number = sc.nextInt();
+		workWours = sc.nextInt();
+		hourValueWork = sc.nextDouble();
+		salary = hourValueWork*workWours;
+		System.out.println("NUMBER = "+number);
+		System.out.println("SALARY = "+salary);
+		sc.close();
+	}
 }
