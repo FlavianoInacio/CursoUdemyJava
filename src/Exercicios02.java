@@ -27,7 +27,7 @@ public class Exercicios02 {
 		System.out.println("Digite o valor do raio");
 		raio = sc.nextDouble();
 		area = pi*(Math.pow(raio, 2));
-		System.out.printf("Área = %.4f", area);
+		System.out.printf("ï¿½rea = %.4f", area);
 		sc.close();
 		
 	}
@@ -42,7 +42,7 @@ public class Exercicios02 {
 		sc.nextLine();
 		d = sc.nextInt();
 		diferenca = (a*b-c*d);
-		System.out.println("DIFERENÇA = " + diferenca);
+		System.out.println("DIFERENï¿½A = " + diferenca);
 		sc.close();
 	}
 
@@ -75,6 +75,21 @@ public class Exercicios02 {
 	}
 	
 	public void exercicio6() {
-		
+		double a,b,c,areaTriangulo,areaCirculo,areaTrapezio,areaQuadrado,areaRetangulo;
+		double pi = 3.14159;
+		a = sc.nextFloat();
+		b = sc.nextFloat();
+		c = sc.nextFloat();
+		areaTriangulo = (a*c)/2;
+		areaCirculo = pi*(Math.pow(c, 2));
+		areaTrapezio = ((a+b)/2)*c;
+		areaQuadrado = Math.pow(b, 2);
+		areaRetangulo = a*b;
+		System.out.printf("AREA TRIANGULO = %.3f%n",areaTriangulo);
+		System.out.printf("AREA CIRCULO = %.3f%n",areaCirculo);
+		System.out.printf("AREA TRAPEZIO = %.3f%n",areaTrapezio);
+		System.out.printf("AREA QUADRADO = %.3f%n",areaQuadrado);
+		System.out.printf("AREA RETANGULO = %.3f%n",areaRetangulo);
+		sc.close();
 	}
 }

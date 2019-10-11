@@ -7,7 +7,7 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Exercicios02 ex = new Exercicios02();
 		//ex.exercicio4();
-		ex.exercicio5();
+		ex.exercicio6();
 	}
 
 }
