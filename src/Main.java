@@ -8,7 +8,7 @@ public class Main {
 		Exercicios02 ex = new Exercicios02();
 		//ex.exercicio4();
 		//ex.exercicio6();
-		Exercicio3 ex3 = new Exercicio3();
-		ex3.exercicio8();
+		Exercicio5 ex5 = new Exercicio5();
+		ex5.exercicio4();
 	}
 }
