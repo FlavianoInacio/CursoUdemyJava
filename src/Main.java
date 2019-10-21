@@ -9,6 +9,6 @@ public class Main {
 		//ex.exercicio4();
 		//ex.exercicio6();
 		Exercicio5 ex5 = new Exercicio5();
-		ex5.exercicio4();
+		ex5.exercicio5();
 	}
 }

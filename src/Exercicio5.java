@@ -70,6 +70,17 @@ public class Exercicio5 {
 			
 		}
 	}
+	
+	public void exercicio5() {
+		int n,fat=1;
+		
+		n = sc.nextInt();
+		for(int i=1; i<=n;i++) {
+			
+			fat = fat * i;
+		}
+		System.out.println(fat);
+	}
 
 
 }
